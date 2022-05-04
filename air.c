@@ -3,6 +3,7 @@
  *  air.c
  *
  ************************************************/
+#include "air.h"
 
 #include <stdio.h> // Standard Input/Output Library
 #include <fcntl.h> // File Control Options
