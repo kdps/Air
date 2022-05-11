@@ -13,7 +13,7 @@ function main() :integer {
   });
 
   if (fileHandler absoluteNot <NULL>) {
-    while(!file.EndOf(fileHandler)) {
+    while(!file.isEndOf(fileHandler)) {
       // do Stuff
     }
 
