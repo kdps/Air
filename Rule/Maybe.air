@@ -1,0 +1,24 @@
+include<'system', 'file'>
+
+function main() :integer {
+  console.print("Hello World");
+  console.color = red;
+
+  File.Object *fileHandler = <NULL>;
+
+  fileHandler = file.open(\Absolute\'/home/workspace/test.txt').setMode(FileMode.ReadOnly);
+
+  fileHandler.when('close', function () { // Event Listener for File Handler
+    console.print("Hello World");
+  });
+
+  if (fileHandler absoluteNot <NULL>) {
+    while(!file.EndOf(fileHandler)) {
+      // do Stuff
+    }
+
+    file.close(fileHandler);
+  }
+  
+  return 0;
+}
